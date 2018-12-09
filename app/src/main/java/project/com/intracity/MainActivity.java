@@ -1,0 +1,30 @@
+package project.com.intracity;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+import android.view.View;
+import android.widget.Button;
+import android.content.Intent;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+
+    public void loginTeacher(View view){
+        Intent intent = new Intent(this, Teacher_login.class);
+        startActivity(intent);
+    }
+    public void loginStudent(View view){
+        Intent intent = new Intent(this, Student_login.class);
+        startActivity(intent);
+    }
+    public void Register(View view){
+        Intent intent = new Intent(this, Register.class);
+        startActivity(intent);
+    }
+}
